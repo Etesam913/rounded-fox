@@ -1,0 +1,31 @@
+#appcontent
+  > #tabbrowser-tabbox
+  > #tabbrowser-tabpanels
+  > .deck-selected
+  > .browserContainer
+  > .browserStack
+  > browser {
+  border-radius: 16px !important;
+  margin: 14px !important;
+}
+.browserContainer {
+  background-color: #efefef !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .browserContainer {
+    background-color: #252626 !important;
+  }
+}
+
+#navigator-toolbox-background {
+  height: 0 !important;
+}
+
+#titlebar {
+  display: none !important;
+}
+
+.titlebar-buttonbox-container {
+  display: none !important;
+}
