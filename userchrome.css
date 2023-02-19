@@ -8,14 +8,15 @@
   border-radius: 16px !important;
   margin: 14px !important;
 }
-.browserContainer {
-  background-color: #efefef !important;
-}
 
-@media (prefers-color-scheme: dark) {
-  .browserContainer {
-    background-color: #252626 !important;
-  }
+.browserContainer {
+  background-color: var(
+    --lwt-accent-color-inactive,
+    var(--lwt-accent-color)
+  ) !important;
+  background-image: var(--lwt-header-image), var(--lwt-additional-images) !important;
+  background-repeat: no-repeat, var(--lwt-background-tiling) !important;
+  background-position: right top, var(--lwt-background-alignment) !important;
 }
 
 #navigator-toolbox-background {
