@@ -1,6 +1,8 @@
 # Rounded-Fox
 
-https://user-images.githubusercontent.com/55665282/219786183-0ea9d55c-9fbf-4433-9e80-d0fb5d6386af.mp4
+
+https://user-images.githubusercontent.com/55665282/220198406-694d796f-e3d5-47fb-b6c9-11e215e62f70.mp4
+
 
 ### Steps for applying this configuration
 <ol>
