@@ -32,24 +32,25 @@
 }
 
 #navigator-toolbox {
-    position: relative;
-    z-index: 1;
-    height: 4px;
-    margin-bottom: 0px;
-    overflow: hidden;
-    transition-property: height;
-    transition-delay: 1s;
-    transition-duration: 2s;
+  position: relative;
+  z-index: 1;
+  height: 20px;
+  margin-bottom: 0px;
+  transition: height 250ms ease-in-out, opacity 250ms ease-in-out;
+  opacity: 0 !important;
+  overflow: hidden;
 }
 
 #navigator-toolbox:hover {
-    height: 40px;
-    transition-property: height;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
+  height: 40px;
+  opacity: 1 !important;
+  transition: height 250ms ease-in-out, opacity 75ms ease-in-out;
 }
 
 #navigator-toolbox:focus-within {
-    height: 40px;
-    transition-property: height;
+  height: 40px;
+  opacity: 1 !important;
+  transition: height 250ms ease-in-out, opacity 75ms ease-in-out;
+  overflow: visible !important;
 }
+
