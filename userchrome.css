@@ -30,27 +30,32 @@
 .titlebar-buttonbox-container {
   display: none !important;
 }
+#navigator-toolbox:not(:hover) {
+  --is-bar-visible: hidden;
+  opacity: 0 !important;
+  height: 20px;
+  transition: height 200ms ease-in-out, opacity 175ms ease-in-out;
+}
 
 #navigator-toolbox {
   position: relative;
   z-index: 1;
-  height: 20px;
-  margin-bottom: 0px;
-  transition: height 250ms ease-in-out, opacity 250ms ease-in-out;
-  opacity: 0 !important;
-  overflow: hidden;
+  overflow: var(--is-bar-visible);
 }
 
 #navigator-toolbox:hover {
   height: 40px;
   opacity: 1 !important;
-  transition: height 250ms ease-in-out, opacity 75ms ease-in-out;
+  transition: opacity 175ms ease-in-out;
 }
 
 #navigator-toolbox:focus-within {
   height: 40px;
   opacity: 1 !important;
-  transition: height 250ms ease-in-out, opacity 75ms ease-in-out;
-  overflow: visible !important;
+  transition: opacity 175ms ease-in-out;
+  --is-bar-visible: visible;
 }
 
+toolbarbutton[open="true"] {
+  --is-bar-visible: visible !important;
+}
