@@ -58,4 +58,6 @@
 
 toolbarbutton[open="true"] {
   --is-bar-visible: visible !important;
+  opacity: 1 !important;
+  transition: opacity 175ms ease-in-out;
 }
